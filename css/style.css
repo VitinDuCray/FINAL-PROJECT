@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wdth,wght@75,400..700&display=swap');
+
+:root {
+    --cp: #ff879b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background: url(../assets/bg.jpg);
+    background-size: 100%;
+}
+
+/* ------------------------ Todos sobre a header ------------------------ */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #a54756;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+header img {
+    width: 125px;
+    background-color: #a54756;
+    margin-left: 30px;
+}
+
+header ul {
+    list-style-type: none;
+    background-color: #a54756;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    background-color: #a54756;
+}
+
+header li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header a {
+    background-color: #a54756;
+}
+
+/* ------------------------ Estrutura Secundária ------------------------ */
+.font {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.main h2 {
+    margin: 30px;
+    margin-top: 15px;
+}
+
+/* ------------------------ Componentes do Nav ------------------------ */
+.linque {
+    color: rgb(255, 255, 255);
+    font-family: "DynaPuff", sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.linque:hover {
+    color: #ffe4a9;;
+    transition: 0.5s;
+}
+
+.bfont {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+/* ------------------------ Base ------------------------ */
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.base1, .base2 {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 6px solid #ffe4a9;
+    border-radius: 5%;
+    padding: 15px;
+    background: linear-gradient(to bottom, #cf7685, #ffc6ce);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+footer {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffe4a9;
+}
+
+/* ------------------------ Dentro da base ------------------------ */
+.icon {
+    z-index: 1;
+    position: relative;
+    background-color: #ddd;
+    border: 4px solid #ffe4a9;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+}
+
+.icon:hover {
+    transition: transform 0.3s ease;
+    transform: scale(2.2);
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cakepics img {
+    width: 100%;
+    height: 100%;
+}
+
+.infos {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    font-size: 15px;
+}
+
+.cakepics {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.imagensbolos {
+    margin-top: 25px;
+}  
+
+.imagensbolos img {
+    display: flex;
+    flex-direction: column;
+    width: 55px;
+    height: 55px;
+    margin-top: 3px;
+    border: 3px solid white;
+}
+
+.baseimagens {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.textc {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container1 {
+    position: relative;
+    display: inline-block;
+}
+
+  .image1-hover {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: transparent;
+}
+
+  .container1:hover .image1-hover {
+    opacity: 1;
+}
+
+/*--------------------Responsividade----------------------*/
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        margin: 0 auto;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perfil {
+        max-width: 300px;
+        min-width: 250px;
+        margin: 0px;
+    }
+
+    .base1, .base2 {
+        width: 100%;
+        height: 100%; 
+        margin: 0px;
+    }
+
+    .icon {
+        height: 60px;
+        width: 60px;
+    }
+
+    .baseimagens {
+        height: 320px;
+        margin: 0px;
+        align-items: center;
+    }
+
+    .imagensbolos img {
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        padding: 0px;
+    }
+
+    .imagensbolos {
+        align-items: center;
+        height: 186px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .infos {
+        max-width: 200px;
+        font-size: 9px;
+        gap: 12px;
+        margin: 10px;
+    }
+
+    .textc {
+        width: 100px;
+        margin: 0px;
+    }
+
+    .textc h2 {
+        margin: 0px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    .linque {
+        font-size: 16px;
+    }
+
+    .base1, .base2 {
+        padding: 5px;
+    }
+
+    .icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    .imagensbolos img {
+        width: 25px;
+        height: 25px;
+    }
+}
